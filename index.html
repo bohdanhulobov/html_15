@@ -7,6 +7,7 @@
   <title>Home work #15</title>
   <link rel="stylesheet" href="dist/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900 font-main">
@@ -54,7 +55,8 @@
         <section class="flex-grow basis-0">
           <h1 class="text-4xl font-bold text-gray-700 dark:text-white mb-8">Discover Our Services</h1>
           <article class="mb-8">
-            <a class="flex gap-6 flex-col md:flex-row" href="">
+            <a class="flex gap-6 flex-col md:flex-row" href="assets/img/image3.jpeg" data-lightbox="services"
+              data-title="Consulting Services">
               <img class="md:w-48 h-48 object-cover order-first rounded-md" src="assets/img/image3.jpeg"
                 alt="Service 1">
               <div>
@@ -64,8 +66,10 @@
               </div>
             </a>
           </article>
+
           <article class="mb-8">
-            <a class="flex gap-6 flex-col md:flex-row" href="">
+            <a class="flex gap-6 flex-col md:flex-row" href="assets/img/image4.jpg" data-lightbox="services"
+              data-title="Digital Marketing">
               <img class="md:w-48 h-48 object-cover order-first rounded-md" src="assets/img/image4.jpg" alt="Service 2">
               <div>
                 <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Digital Marketing</h2>
@@ -115,6 +119,7 @@
     </footer>
 
   </div>
+  <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
