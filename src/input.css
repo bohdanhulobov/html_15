@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-link {
+  @apply block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700 transition duration-200;
+}
+
+.pagination-link {
+  @apply inline-block py-1 px-4 border border-gray-300 rounded-full text-gray-600 dark:text-gray-400 hover:bg-blue-400 hover:text-white transition;
+}
+
+.footer-link {
+  @apply block py-1 text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition;
+}
+
+.hero-link {
+  @apply absolute inset-0;
+}
+
+.hero-title {
+  @apply absolute bottom-4 left-4 text-3xl font-bold text-white z-10;
+}
+
+.hero-img {
+  @apply absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-gradient-to-tr from-gray-900 via-transparent to-blue-900/50 group-hover:to-blue-700/50 transition-all duration-500;
+}
+
+.menu-icon {
+  @apply mr-2;
+}
